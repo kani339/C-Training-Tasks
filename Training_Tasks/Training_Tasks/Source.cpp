@@ -95,6 +95,65 @@ int main()
 	cout << "\nGross Salary: " << gross_salary;
 	*/
 
+		
+	/* Reverse Number */
+	/*
+	int n, reverse = 0;
+	cout << "Enter number ot reverse ";
+	cin >> n;
+
+	while (n!=0)
+	{
+		reverse = reverse * 10;
+		reverse = reverse + n%10;
+		n /= 10;
+	}
+
+	cout << "Reversed Number: " << reverse;
+	*/
+
+	/* Palindrom number */
+	/*
+	int n, reverse = 0, temp;
+	cout << "Enter number ot check if it is a palindrome: ";
+	cin >> n;
+	temp = n;
+
+	while (temp != 0)
+	{
+		reverse = reverse * 10;
+		reverse = reverse + temp % 10;
+		temp /= 10;
+	}
+
+	if (n == reverse) {
+		cout << "Number " << n << " is palindrome";
+	}
+	else {
+		cout << "Number " << n << " is not palindrome";
+	}
+	*/
+	
+	/* Prime numbers */
+
+	int i, n, result;
+	cout << "Enter number of prime numbers: ";
+	cin >> n;
+
+	bool isPrime = true;
+
+	for (int i = 2; i <= n/2; i++)
+	{
+		if (n%i == 0) {
+			isPrime = false;
+			break;
+		}
+	}
+
+	if (isPrime)
+		cout << "This is a prime number";
+	else
+		cout << "This is not a prime number";
 
 
 	_getch();
