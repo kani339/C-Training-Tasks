@@ -1,6 +1,6 @@
 # C++ Exercises
 
-Easy Tasks:
+**Easy Tasks:**
 
 1. Summ digits of integer number
 2. Greatest of 3 numbers
