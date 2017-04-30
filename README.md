@@ -16,6 +16,6 @@
 12. Fibonaic series using recursion
 13. Print pattern
 14. Diamond pattern
-15. Floyd's triangle ?
-16. Pascal triangle ?
-
+15. Floyd's triangle
+16. Pascal triangle
+17. Decimal to binary

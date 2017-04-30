@@ -13,6 +13,8 @@ using namespace std;
 //Fibonaci series using recursion
 //int Fibonacci(int n);
 
+//pascal triangle
+//long factorial(int);
 
 int main()
 {
@@ -252,7 +254,7 @@ int main()
 	*/
 
 	/* Diamond pattern */
-
+	/*
 	int row,k, space = 1;
 	cout << "Enter numbers of rows: ";
 	cin >> row;
@@ -292,6 +294,66 @@ int main()
 
 		cout << "\n";
 	}
+	*/
+
+	
+	/* Decimal to binary */
+	/*
+	int decimal, remainder, temp, binary = 0, base = 1;
+	cout << "Enter decimal number: ";
+	cin >> decimal;
+	temp = decimal;
+
+	while (temp>0)
+	{
+		remainder = temp % 2;
+		binary = binary + remainder * base;
+		temp /= 2;
+		base = base * 10;
+	}
+
+	cout << "Binary: " << binary;
+	*/
+
+
+	/* Floyds triangle */
+	/*
+	int n, i, c, a = 1;
+	cout << "Enter number of rows of Floyd's triangle: ";
+	cin >> n;
+
+	for (i = 1; i < n; i++)
+	{
+		for (c = 1; c < i; c++)
+		{
+			cout << a;
+			a++;
+		}
+		cout << "\n";
+	}
+	*/
+
+
+	/* Pascal triangle */
+	/*
+	int i, n, c;
+	cout << "Enter the number of rows you wish to see in pascal triangle: ";
+	cin >> n;
+
+	for (i = 0; i < n; i++)
+	{
+		for (c = 0; c <= (n-i-2); c++)
+		cout << " ";
+
+		for (c = 0; c <= i; c++)
+		cout << factorial(i) / (factorial(c)*factorial(i - c));
+
+		cout << "\n";
+	}
+	*/
+
+
+		
 
 
 	_getch();
@@ -340,5 +402,19 @@ int Fibonacci(int n)
 	else {
 		return (Fibonacci(n - 1) + Fibonacci(n - 2));
 	}
+}
+*/
+
+//Pascal triangle
+/*
+long factorial(int n)
+{
+	int c;
+	long result = 1;
+	
+	for (c = 1; c <= n; c++)
+	result = result*c;
+
+	return (result);
 }
 */
